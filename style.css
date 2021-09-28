@@ -65,7 +65,6 @@ body {
   height: 100%;
 }
 .header-desktop {
-  border: 1px solid red;
   background-color: #030303;
 }
 .header-container {
@@ -124,7 +123,7 @@ body {
 /***************************************************
 *******************main*****************************/
 .main {
-  border: 1px solid red;
+ 
 }
 .container {
   margin: 0 auto;
@@ -154,27 +153,45 @@ body {
 
 /***************************************************
 ********************swiper************************/
-.swiper {
+.swiper-welcome {
   width: 100%;
   height: 100%;
 }
-.fa-long-arrow-left,
-.fa-long-arrow-right {
+.fa-angle-double-right,
+.fa-angle-double-left {
   color: #ffffff;
 }
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 30px;
+}
 .swiper-pagination-bullet {
-  width: 15px;
-  height: 15px;
-  border-radius: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 /****************************************************
 *******************welcom***************************/
 .content-welcome {
-  background-image: url(assets/img/1.jpg);
   background-repeat: no-repeat;
   background-position: calc(100%) calc(100% - 95px);
   height: 842px;
+}
+.content-welcome1{
+  background-image: url(assets/img/1.jpg);
+}
+.content-welcome2{
+  background-image: url(assets/img/2.jpg);
+}
+.content-welcome3{
+  background-image: url(assets/img/3.jpg);
+}
+.content-welcome4{
+  background-image: url(assets/img/4.jpg);
+}
+.content-welcome5{
+  background-image: url(assets/img/5.jpg);
 }
 .paragraph-welcome {
   font-size: 28px;
@@ -300,7 +317,7 @@ body {
 /****************************************************
 ********************video***************************/
 .container-video {
-  padding: 75px 0 75px 0;
+  padding: 75px 0 0px 0;
 }
 .video-title-wrapper {
   display: flex;
@@ -392,23 +409,54 @@ body {
   cursor: ew-resize;
   background: #ffffff;
 }
-.content-video-slave {
-  padding: 40px 0 0 0;
+/*************swiper-video***************************/
+.swiper-video{
+  width: 100%;
+  height: 385px;
+  
+}
+.swiper-video-wrapper{
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+.swiper-video-slide{
+  height: 254px;
+}
+.swiper-video-slide iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video-right,
+.video-left {
+  color: #ffffff;
+}
+.swiper-video-pagination .swiper-pagination-bullet{
+  background-color: #333333;
+}
+.swiper-button-prev-welcome{
+  left: 650px;
+  bottom: 100px;
 }
 /******************************************************
 *********************gallery**************************/
 .container-gallery {
   padding: 75px 0 75px 0;
 }
+.picture-container{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 1960px;
+}
 .gallery-list {
   display: flex;
   flex-direction: column;
   gap: 24px 36px;
   flex-wrap: wrap;
-  height: 1740px;
-  justify-content: center;
+  height: 3000px;
+  justify-content: space-evenly;
   padding: 75px 0 0 0;
 }
 /******************************************************
@@ -520,6 +568,7 @@ body {
   text-align: right;
 }
 .number {
+  display: block;
   all: unset;
   width: 3em;
   text-align: center;
@@ -528,6 +577,8 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
+  width: 100%;
+  height: 100%;
 }
 .span-input {
   display: block;
@@ -548,10 +599,11 @@ body {
   justify-content: space-between;
   float: right;
 }
+
 .input-bottom {
   background-color: #ffffff;
   border: 0;
-  padding: 0 14px 0 14px;
+  padding: 0 12px 0 14px;
   font-size: 32px;
   line-height: 37.5px;
   font-family: Roboto;
@@ -630,6 +682,7 @@ body {
   align-items: flex-start;
   height: 265px;
   padding: 75px 0 50px 0;
+  
 }
 
 .footer-span {
@@ -664,11 +717,29 @@ body {
 }
 .footer-social-list {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
 }
-.footer-social-items {
-  padding: 0 25px 0 0;
+.footer-bottom{
+  border-top: 3px solid #666666;
+  
 }
-.footer-social-items:last-child {
-  padding: 0;
+.footer-bottom-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 124px;
+}
+.footer-bottom-items{
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 22px;
+  font-family: Roboto;
+  font-style: Thin;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.tour{
+  width: 100%;
+  height: 100%;
 }
