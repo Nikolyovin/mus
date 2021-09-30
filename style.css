@@ -39,6 +39,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -85,6 +86,11 @@ body {
 .header-logo:hover {
   filter: invert(53%) sepia(8%) saturate(1313%) hue-rotate(356deg)
     brightness(100%) contrast(92%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.logo-link{
+  text-decoration: none;
 }
 .logo-title {
   color: #ffffff;
@@ -115,6 +121,7 @@ body {
 }
 .header-link:hover {
   color: #9d8665;
+  transition: 0.5s;
 }
 .header-link:active {
   color: #7e6c51;
@@ -214,6 +221,14 @@ body {
   border: 0;
   color: #ffffff;
 }
+.button:hover{
+  background-color: #744747;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.button:active{
+  background-color: #7c3535;
+}
 .button-link {
   display: inline-block;
   height: 100%;
@@ -268,6 +283,7 @@ body {
   right: 140px;
   height: 2px;
   background-color: #710707;
+  transition: 0.5s;
 }
 .content-visiting-text-top {
   font-size: 22px;
@@ -344,6 +360,13 @@ body {
   position: absolute;
   top: 215px;
   left: 610px;
+}
+.play:hover{
+  filter: invert(43%) sepia(5%) saturate(2126%) hue-rotate(357deg)
+    brightness(97%) contrast(88%);
+cursor: pointer;
+transition: 0.5s;
+
 }
 .control-panel {
   background-color: #000000;
@@ -436,19 +459,16 @@ body {
 .swiper-video-pagination .swiper-pagination-bullet{
   background-color: #333333;
 }
-.swiper-button-prev-welcome{
-  left: 650px;
-  bottom: 100px;
-}
+
 /******************************************************
 *********************gallery**************************/
 .container-gallery {
   padding: 75px 0 75px 0;
 }
 .picture-container{
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   height: 1960px;
+  box-shadow:inset 0 0 20px 10px rgba(0, 0, 0, 0.6);
 }
 .gallery-list {
   display: flex;
@@ -458,6 +478,14 @@ body {
   height: 3000px;
   justify-content: space-evenly;
   padding: 75px 0 0 0;
+}
+.gallery-gradient {
+  position: absolute;
+  width: 1440px;
+  height: 360px;
+  margin-top: 1650px;
+  background: linear-gradient(
+180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
 }
 /******************************************************
 ******************tickets*****************************/
@@ -599,6 +627,9 @@ body {
   justify-content: space-between;
   float: right;
 }
+.number{
+  margin: 0 0 0 20px;
+}
 
 .input-bottom {
   background-color: #ffffff;
@@ -622,9 +653,139 @@ body {
   width: 175px;
   height: 50px;
 }
+.button-buy:hover{
+  background-color:#5a5a5a;
+  cursor: pointer;
+  transition: 0.5s;
+}
 .img-conteiner img {
   display: block;
   margin: 0 auto;
+}
+/******************************************************
+**************************form************************/
+.form{
+  width: 1440px;
+  height: 845px;
+}
+.form-buy{
+}
+.form-buy-wrap{
+  padding: 91px 235px;
+  color: #030303;
+  font-family: Roboto;
+  font-style: Regular;
+  font-weight: 400;
+  display: flex;
+}
+.personal-info{
+  padding: 0 40px 0 0;
+}
+
+.personal-info-head{
+  position: relative;
+}
+.form-buy-logo{
+  filter: invert(55%) sepia(6%) saturate(2254%) hue-rotate(356deg) brightness(99%) contrast(70%);
+display: block;
+}
+
+.personal-info-title{
+  text-transform: uppercase;
+  color: #9D8665;
+  font-size: 50px;
+  line-height: 55px;
+  font-family: Forum;
+  font-style: Regular;
+  font-weight: 400;
+}
+.personal-info-title{
+  color: #9D8665;
+  font-size: 50px;
+  line-height: 55px;
+  font-family: Forum;
+  font-style: Regular;
+  font-weight: 400;
+}
+.personal-info-span{
+  display: block;
+  padding: 15px 0 10px 0;
+  color: #710707;
+  font-size: 18px;
+  line-height: 21px; 
+}
+
+.personal-info-span::after{
+  position: absolute;
+  content: '';
+  height: 3px;
+  background-color: #710707;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.inputs{
+  padding: 60px 0 0 0;
+}
+
+.input-items{
+  padding: 0 0 20px 0; 
+}
+.input-items:last-child{
+  padding: 0;
+}
+.input-name,
+.input-email,
+.input-phone,
+.select-tickets{
+  width: 100%;
+  height: 45px;
+  font-family: roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+ 
+}
+.input-name::-moz-placeholder,
+.input-email::-moz-placeholder,
+.input-phone::-moz-placeholder{
+  
+  font-family: roboto;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 21px;
+}
+.input-name::-webkit-input-placeholder,
+.input-email::-webkit-input-placeholder,
+.input-phone::-webkit-input-placeholder{
+  
+  font-family: roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.input-name{
+  background-image: url(assets/svg/name.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  background-size: 15px;
+  padding-left: 60px;
+}
+
+.card-info{
+  border: 1px solid black; 
+}
+
+/******************************************************
+********************parallax*************************/
+.parallax {
+  padding: 0;
+  margin: 0;
+  background: url(assets/img/parallax.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px;
 }
 /******************************************************
 ********************contacts**************************/

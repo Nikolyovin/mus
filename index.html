@@ -30,9 +30,11 @@
 
    <header class="header-desktop">
       <div class="container header-container">
-         <div class="header-logo">
-            <span class="logo-title">Louvre</span>
-         </div>
+         <a href="#index.html" class="logo-link">
+            <div class="header-logo">
+               <span class="logo-title">Louvre</span>
+            </div>
+         </a>
          <nav class="header-nav">
             <ul class="header-menu">
                <li class="header-items">
@@ -292,6 +294,7 @@
          <div class="container container-gallery">
             <h2 class="section-title section-title-dark title-gallery">Art Gallery</h2>
             <div class="picture-container">
+               <div class="gallery-gradient"></div>
                <div class="gallery-list picture-inner-container">
 
                </div>
@@ -341,10 +344,53 @@
                   <button class="button-buy">Buy Now</button>
                </div>
             </div>
+            <div class="form">
+               <form action="#" method="POST" class="form-buy">
+                  <div class="form-buy-wrap">
+                     <section class="personal-info">
+                        <div class="personal-info-head">
+                           <img src="assets/svg/Frame.svg" alt="logo" class="form-buy-logo">
+                           <h2 class="personal-info-title">booking tickets</h2>
+                           <span class="personal-info-span">Tour to Louvre</span>
+                        </div>
+                        <div class="inputs">
+                           <div class="input-items ">
+                              <input class="input-date" type="date" placeholder="Date">
+                              <input class="input-time" type="time">
+                           </div>
+                           <div class="input-items ">
+                              <input class="input-name" type="text" placeholder="Name">
+                           </div>
+                           <div class="input-items ">
+                              <input class="input-email" type="email" placeholder="E-mail">
+                           </div>
+                           <div class="input-items ">
+                              <input class="input-phone" type="tel" placeholder="Phone">
+                           </div>
+                           <div class="input-items select-wrap">
+                              <select class="select-tickets" placeholder="type tickets">
+                                 <option value="type1">Type1</option>
+                                 <option value="type2">Type2</option>
+                                 <option value="type3">Type3</option>
+                              </select>
+                           </div>
+
+                        </div>
+                     </section>
+                     <section class="card-info">
+
+                     </section>
+               </form>
+            </div>
+
+
+
+         </div>
+
          </div>
       </section>
-      <div class="img-conteiner">
-         <img width="1920" height="400" src="assets/img/parallax 1.jpg" alt="img">
+      <div class="parallax">
+
       </div>
       <section class="section contacts" id="contacts">
          <div class="container container-contacts">
