@@ -491,6 +491,7 @@ transition: 0.5s;
 ******************tickets*****************************/
 .container-tickets {
   padding: 75px 0;
+  position: relative;
 }
 
 .title-tickets {
@@ -664,11 +665,43 @@ transition: 0.5s;
 }
 /******************************************************
 **************************form************************/
+.form-wrap{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
 .form{
   width: 1440px;
   height: 845px;
+  position: absolute;
+  top:100px;
+  left: 230px;
+  background-color: #ffffff;
+  
 }
+
 .form-buy{
+  position: relative;
+}
+.form-close{
+  display: block;
+  text-align: right;
+  position: absolute;
+  top:25px;
+  right: 25px;
+  
+}
+.form-close img:hover{
+  filter: invert(53%) sepia(8%) saturate(1313%) hue-rotate(356deg)
+  brightness(100%) contrast(92%);
+  transition: 0.5s;
+  cursor: pointer;
 }
 .form-buy-wrap{
   padding: 91px 235px;
@@ -677,6 +710,9 @@ transition: 0.5s;
   font-style: Regular;
   font-weight: 400;
   display: flex;
+}
+.personal-info{
+  padding: 0 40px 0 0;
 }
 
 .personal-info-head{
@@ -721,9 +757,375 @@ display: block;
   bottom: 0;
   left: 0;
 }
+.inputs{
+  padding: 60px 0 0 0;
+}
+ .date-time{
+display: flex;
+justify-content: space-between;
+ }
 
+ 
+.input-date,
+.input-time{
+width: 185px;
+height: 45px;
+border: 2px solid #030303;
+}
+.input-items{
+  padding: 0 0 20px 0; 
+}
+.input-items:last-child{
+  padding: 0;
+}
+.input-name,
+.input-email,
+.input-phone,
+.select-tickets{
+  width: 100%;
+  height: 45px;
+  font-family: roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  border-color: #030303;
+}
+.input-name::-moz-placeholder,
+.input-email::-moz-placeholder,
+.input-phone::-moz-placeholder{
+  color: #030303;
+  font-family: roboto;
+  font-style: regular;
+  font-size: 18px;
+  line-height: 21px;
+}
+.input-name::-webkit-input-placeholder,
+.input-email::-webkit-input-placeholder,
+.input-phone::-webkit-input-placeholder{
+  color: #030303;
+  font-family: roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+}
+.input-name{
+  background-image: url(assets/svg/name.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 12px;
+  background-size: 13px 15px;
+  padding-left: 43px;
+}
+
+.input-email{
+  background-image: url(assets/svg/email.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-size: 15px 11px;
+  padding-left: 43px;
+}
+
+.input-phone{
+  background-image: url(assets/svg/tel.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 8px;
+  background-size: 14px 23px;
+  padding-left: 43px;
+}
+.select-tickets{
+  background-image: url(assets/svg/tickets.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  background-size: 15px;
+  padding-left: 43px;
+  border: none;
+  border: 2px solid #030303;
+  position: relative;
+}
+
+.entry{
+  border: 2px solid #030303;
+  position: relative;
+  padding: 10px 15px;
+  margin: 20px 0 0 0;
+}
+.entry-title{
+  color: #9D8665;
+  font-family: Forum;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.entry-title::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #710707;
+  width: 92%;
+  top: 33px;
+  left: 15px;
+}
+
+.basic-tickets{
+  padding: 25px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.senior-tickets{
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets-span{
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.tickets-buttons{
+  border: 1px solid black;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-button-items:hover{
+  background-color:#615f5f;
+  border-color: #615f5f;
+}
+
+.tickets-button-items{
+background-color: #030303;
+color: #ffffff;
+border-color: #030303;
+width: 40px;
+height: 25px;
+
+}
+
+.tickets-number{
+  border: none;
+  width: 30px;
+  height: 20px;
+  align-items: center;
+  margin: 0 0 0 15px;
+}
 .card-info{
   border: 1px solid black; 
+  padding: 25px 30px;
+  min-width: 530px;
+  position: relative;
+  
+}
+
+.card-info-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info-title-top{
+  padding: 0 0 2px 0;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.card-info-title-bottom{
+  color: #740C11;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  padding: 0 0 10px 0;
+}
+.card-info-span{
+  display: block;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  padding: 0 0 5px 0;
+  background-repeat: no-repeat;
+  padding-left: 30px ;
+  background-size: 15px 15px;
+  
+}
+.card-info-span-top{
+  background-image: url(assets/svg/date.svg);
+}
+.card-info-span-center{
+  background-image: url(assets/svg/time.svg);
+}
+.card-info-span-bottom {
+  background-image: url(assets/svg/Vector\ \(8\).svg);
+}
+.center-left-items{
+display: block;
+font-size: 22px;
+line-height: 27px;
+padding: 0 0 5px 0;
+}
+
+.card-info-center{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0 0 0;
+  flex-wrap:wrap;
+  margin: 0 0 21px 0;
+}
+
+.card-info-center::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  background-color: #740C11;
+  width: 100%;
+  bottom: -9px;
+}
+.center-left-items span{
+  background-color: #030303;
+  color: #ffffff;
+  padding: 0 15px;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+}
+
+.card-info-total{
+  display: flex;
+  justify-content: space-between;
+}
+.card-info-sapn{
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+  
+}
+.card{
+  width: 360px;
+  height: 211px;
+  background-color: #A4A4A3;
+  padding: 15px 20px;
+  position: relative;
+  border-radius: 3px;
+  z-index: 100;
+  margin: 10px 0 0 0;
+}
+.card-number-span{
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: 0 0 5px 0;
+}
+
+.card-number-input{
+  display: block;
+  height: 35px;
+  width: 215px;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 10px;
+}
+.card::before{
+  background-image: url(assets/svg/Mastercard.svg);
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 53px;
+  top: 60px;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+.card::after{
+  background-image: url(assets/svg/Visa.svg);
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 55px;
+  top: 34px;
+  right: 20px;
+  background-repeat: no-repeat;
+}
+.card-number-date{
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  height: 35px;
+  width: 100px;
+  padding: 0 0 0 10px;
+  margin: 0 11px 10px 0;
+}
+.card-number-holder{
+  height: 35px;
+  width: 320px;
+  padding: 0 0 0 10px;
+  margin: 0 11px 0 0;
+}
+
+.card-backside{
+  width: 360px;
+  height: 211px;
+  background-color: #939393;
+  padding: 25px 0 0 0;
+  position: absolute;
+  border-radius: 3px;
+  bottom: 85px;
+  right: 30px;
+  z-index: 1;
+  
+}
+.card-backside::before{
+  content: '';
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  background-color: #030303;
+}
+.card-cvv-wrap{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: flex-end;
+  padding: 65px 20px 0 0;
+}
+.card-cvv-span{
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 12px 5px 0;
+}
+
+.card-cvv-input{
+  display: block;
+  width: 75px;
+  height: 35px;
+}
+
+.card-cvv-info{
+  display: block;
+  width: 65px;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: left;
+  padding: 5px 0 0 0;
+}
+.card-button-wrap{
+  text-align: right;
+  padding: 56px 0px 0px 0px;
+}
+.card-button{
+  background-color: #710707;
+  color: #ffffff;
+  height: 45px;
+  width: 220px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
 /******************************************************
 ********************parallax*************************/
