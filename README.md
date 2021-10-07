@@ -1,1 +1,1 @@
-# https://Nikolyovin.github.io/mus/museum/
+# https://Nikolyovin.github.io/mus/
