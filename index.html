@@ -341,54 +341,136 @@
                         onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                   <span class="span-total tickets-input-title">Total €220</span>
-                  <button class="button-buy">Buy Now</button>
+                  <button class="button-buy" id="open-form" onclick="openForm()">Buy Now</button>
                </div>
             </div>
-            <div class="form">
-               <form action="#" method="POST" class="form-buy">
-                  <div class="form-buy-wrap">
-                     <section class="personal-info">
-                        <div class="personal-info-head">
-                           <img src="assets/svg/Frame.svg" alt="logo" class="form-buy-logo">
-                           <h2 class="personal-info-title">booking tickets</h2>
-                           <span class="personal-info-span">Tour to Louvre</span>
-                        </div>
-                        <div class="inputs">
-                           <div class="input-items ">
-                              <input class="input-date" type="date" placeholder="Date">
-                              <input class="input-time" type="time">
+
+
+            <div class="form-wrap" id="form">
+               <div class="form">
+
+                  <form action="#" method="POST" class="form-buy">
+                     <a onclick="closeForm()" class="form-close">
+                        <img src="assets/svg/Close.svg" alt="close">
+                     </a>
+                     <div class="form-buy-wrap">
+                        <section class="personal-info">
+                           <div class="personal-info-head">
+                              <img src="assets/svg/Frame.svg" alt="logo" class="form-buy-logo">
+                              <h2 class="personal-info-title">booking tickets</h2>
+                              <span class="personal-info-span">Tour to Louvre</span>
                            </div>
-                           <div class="input-items ">
-                              <input class="input-name" type="text" placeholder="Name">
+                           <div class="inputs">
+                              <div class="input-items date-time">
+                                 <input class="input-date" type="date" placeholder="Date">
+                                 <input class="input-time" type="time">
+                              </div>
+                              <div class="input-items ">
+                                 <input class="input-name" type="text" placeholder="Name">
+                              </div>
+                              <div class="input-items ">
+                                 <input class="input-email" type="email" placeholder="E-mail">
+                              </div>
+                              <div class="input-items ">
+                                 <input class="input-phone" type="tel" placeholder="Phone">
+                              </div>
+
+                              <div class="input-items select-wrap">
+                                 <select class="select-tickets" placeholder="type tickets">
+                                    <option value="type1">Type1</option>
+                                    <option value="type2">Type2</option>
+                                    <option value="type3">Type3</option>
+                                 </select>
+                              </div>
+
+
                            </div>
-                           <div class="input-items ">
-                              <input class="input-email" type="email" placeholder="E-mail">
-                           </div>
-                           <div class="input-items ">
-                              <input class="input-phone" type="tel" placeholder="Phone">
-                           </div>
-                           <div class="input-items select-wrap">
-                              <select class="select-tickets" placeholder="type tickets">
-                                 <option value="type1">Type1</option>
-                                 <option value="type2">Type2</option>
-                                 <option value="type3">Type3</option>
-                              </select>
+                           <div class="entry">
+                              <div class="title-wrap">
+                                 <h4 class="entry-title">Entry Ticket</h4>
+                              </div>
+                              <div class="basic-tickets">
+                                 <span class="tickets-span">Basic 18+ (20 €)</span>
+                                 <div class="tickets-buttons">
+                                    <button class="tickets-button-items" type="button"
+                                       onclick="this.nextElementSibling.stepDown()">-</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="tickets-number">
+                                    <button class="tickets-button-items" type="button"
+                                       onclick="this.previousElementSibling.stepUp()">+</button>
+                                 </div>
+                              </div>
+                              <div class="senior-tickets">
+                                 <span class="tickets-span">Senior 65+ (10 €)</span>
+                                 <div class="tickets-buttons">
+                                    <button class="tickets-button-items" type="button"
+                                       onclick="this.nextElementSibling.stepDown()">-</button>
+                                    <input type="number" min="0" max="20" value="1" readonly class="tickets-number">
+                                    <button class="tickets-button-items" type="button"
+                                       onclick="this.previousElementSibling.stepUp()">+</button>
+                                 </div>
+                              </div>
                            </div>
 
-                        </div>
-                     </section>
-                     <section class="card-info">
+                        </section>
+                        <section class="card-info">
+                           <div class="card-info-top">
+                              <div class="card-info-title-wrap">
+                                 <h2 class="card-info-title-top">Overview</h2>
+                                 <h2 class="card-info-title-bottom">Tour to Louvre</h2>
+                                 <span class="card-info-span-top card-info-span">Friday, August 19</span>
+                                 <span class="card-info-span-center card-info-span">16 : 30</span>
+                                 <span class="card-info-span-bottom card-info-span">Temporary exhibition</span>
+                              </div>
+                              <div class="card-info-img">
+                                 <img width="150" height="120" src="assets/img/Rectangle 4.jpg" alt="img">
+                              </div>
+                           </div>
+                           <div class="card-info-center">
+                              <div class="card-info-center-left">
+                                 <span class="center-left-items"><span>2</span>Basic (20 €)</span>
+                                 <span class="center-left-items"><span>2</span>Senior (10 €)</span>
+                              </div>
+                              <div class="card-info-center-right">
+                                 <span class="center-left-items">40 €</span>
+                                 <span class="center-left-items">20 €</span>
+                              </div>
+                           </div>
+                           <div class="card-info-total">
+                              <span class="card-info-sapn">Total:</span>
+                              <span class="card-info-sapn">60 €</span>
+                           </div>
+                           <div class="card">
+                              <span class="card-number-span">Card number</span>
+                              <input class="card-number-input" type="number" name='number'>
+                              <span class="card-number-span">Expiration date</span>
+                              <input class="card-number-date" type="number" name='number' value="03">
+                              <input class="card-number-date" type="number" name='number' value="2024">
+                              <span class="card-number-span">Cardholder name</span>
+                              <input class="card-number-holder" type="text" name='number'>
+                           </div>
+                           <div class="card-backside">
+                              <div class="card-cvv-wrap">
+                                 <span class="card-cvv-span">CVC/CVV</span>
+                                 <input class="card-cvv-input" type="number" name='number'>
+                                 <span class="card-cvv-info">The last <br /> 3 or 4 digits <br /> on back <br /> of the
+                                    card</span>
+                              </div>
+                           </div>
+                           <div class="card-button-wrap">
+                              <button class="card-button">Book</button>
 
-                     </section>
-               </form>
+                           </div>
+                        </section>
+                     </div>
+                  </form>
+               </div>
             </div>
-
-
 
          </div>
 
          </div>
       </section>
+
       <div class="parallax">
 
       </div>
@@ -497,8 +579,9 @@
    </footer>
 
    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-   <script src="index.js"></script>
-   <script src="gallery.js"></script>
+   <script type="module" src="index.js"></script>
+   <script src="swiper.js"></script>
+
    <script src="https://use.fontawesome.com/397fa236db.js"></script>
 </body>
 
