@@ -47,4 +47,12 @@ const swiperVideo = new Swiper(".swiper-video", {
       nextEl: '.swiper-video-button-next',
       prevEl: '.swiper-video-button-prev',
    },
+   breakpoints: {
+      420: {
+         slidesPerView: 2,
+      },
+      769: {
+         slidesPerView: 3,
+      },
+   }
 });
