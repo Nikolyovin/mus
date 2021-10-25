@@ -53,83 +53,87 @@
                   <a href="#tickets" class="header-link">Tickets</a>
                </li>
                <li class="header-items">
-                  <a href="#contacts" class="header-link">Contacts</a>
+                  <a href="#contacts" class="header-link header-link-last">Contacts</a>
                </li>
             </ul>
          </nav>
       </div>
    </header>
+   <header class="header-mob">
+
+      <div class="container header-mob-container">
+         <a href="#index.html" class="logo-link">
+            <div class="header-logo">
+               <span class="logo-title">Louvre</span>
+            </div>
+         </a>
+         <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+               <span></span>
+            </label>
+            <ul class="menu__box">
+               <li><a class="menu__item" href="#visiting">Visiting</a></li>
+               <li><a class="menu__item" href="#explore">Explore</a></li>
+               <li><a class="menu__item" href="#video">Video</a></li>
+               <li><a class="menu__item" href="#gallery">Gallery</a></li>
+               <li><a class="menu__item" href="#tickets">Tickets</a></li>
+               <li><a class="menu__item" href="#contacts">Contacts</a></li>
+            </ul>
+         </div>
+      </div>
+
+
+
+   </header>
+
 
    <main class="main">
       <section class="section dark-section welcome">
-         <div class="container">
+         <div class="container container-welcome">
+            <div class="title-wrap-welcome">
+               <h1 id="title-welcome" class="section-title section-title-dark ">Welcome<br /> to the louvre
+               </h1>
+
+               <p class="paragraph-welcome">From the castle to the museum</p>
+               <div class="button-welcome">
+                  <a href="tours/tour1.html" target="_blank" class="button-link"><button class="button">Discover the
+                        Louvre</button></a>
+               </div>
+            </div>
             <div class="swiper swiper-welcome">
                <div class="swiper-wrapper swiper-wrapper-welcome">
 
+
                   <div class="swiper-slide swiper-slide-welcome">
                      <div class="content-welcome content-welcome1 ">
-                        <h1 id="title-welcome" class="section-title section-title-dark ">Welcome<br /> to the louvre
-                        </h1>
-                        <p class="paragraph-welcome">From the castle to the museum</p>
-                        <div class="button-welcome">
-
-                           <a href="tours/tour1.html" target="_blank" class="button-link"><button
-                                 class="button">Discover the
-                                 Louvre</button></a>
-
-                        </div>
+                        <div class="swiper-shadow"></div>
                      </div>
                   </div>
-
                   <div class="swiper-slide swiper-slide-welcome">
-                     <div class="content-welcome content-welcome2">
-                        <h1 id="title-welcome" class="section-title section-title-dark">Welcome<br /> to the louvre</h1>
-                        <p class="paragraph-welcome">From the castle to the museum</p>
-                        <div class="button-welcome">
-                           <a href="tours/tour1.html" target="_blank" class="button-link"><button
-                                 class="button">Discover the
-                                 Louvre</button></a>
-                        </div>
+                     <div class="content-welcome content-welcome2 ">
+                        <div class="swiper-shadow"></div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-welcome">
+                     <div class="content-welcome content-welcome3 ">
+                        <div class="swiper-shadow"></div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-welcome">
+                     <div class="content-welcome content-welcome4 ">
+                        <div class="swiper-shadow"></div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-welcome">
+                     <div class="content-welcome content-welcome5 ">
+                        <div class="swiper-shadow"></div>
                      </div>
                   </div>
 
-                  <div class="swiper-slide swiper-slide-welcome">
-                     <div class="content-welcome content-welcome3">
-                        <h1 id="title-welcome" class="section-title section-title-dark">Welcome<br /> to the louvre</h1>
-                        <p class="paragraph-welcome">From the castle to the museum</p>
-                        <div class="button-welcome">
-                           <a href="tours/tour1.html" target="_blank" class="button-link"><button
-                                 class="button">Discover the
-                                 Louvre</button></a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="swiper-slide swiper-slide-welcome">
-                     <div class="content-welcome content-welcome4">
-                        <h1 id="title-welcome" class="section-title section-title-dark">Welcome<br /> to the louvre</h1>
-                        <p class="paragraph-welcome">From the castle to the museum</p>
-                        <div class="button-welcome">
-                           <a href="tours/tour1.html" target="_blank" class="button-link"><button
-                                 class="button">Discover the
-                                 Louvre</button></a>
-                        </div>
-                     </div>
-                  </div>
-
-                  <div class="swiper-slide swiper-slide-welcome">
-                     <div class="content-welcome content-welcome5">
-                        <h1 id="title-welcome" class="section-title section-title-dark">Welcome<br /> to the louvre</h1>
-                        <p class="paragraph-welcome">From the castle to the museum</p>
-                        <div class="button-welcome">
-                           <a href="tours/tour1.html" target="_blank" class="button-link"><button
-                                 class="button">Discover the
-                                 Louvre</button></a>
-                        </div>
-                     </div>
-                  </div>
 
                </div>
+
 
                <div class="swiper-pagination swiper-pagination-welcome">
 
@@ -147,6 +151,7 @@
 
             </div>
          </div>
+
       </section>
       <section class="section white-section" id="visiting">
          <div class="container">
@@ -211,9 +216,13 @@
                <h2 class="section-title section-title-dark title-explore">Picture explore</h2>
                <p class="content-explore-text">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of
                   the Spanish Golden Age.</p>
-               <p class="content-explore-text">It was cleaned in 1984 to remove a "yellow veil" of dust that had
+               <p class="content-explore-text content-explore-text2">It was cleaned in 1984 to remove a <font
+                     color='yellow'>
+                     "yellow veil"</font> of
+                  dust that had
                   gathered since the previous restoration in the 19th century.</p>
-               <p class="content-explore-text">The cleaning provoked furious protests, not because the picture had been
+               <p class="content-explore-text content-explore-text3">The cleaning provoked furious protests, not because
+                  the picture had been
                   damaged in any way, but because it looked different.</p>
             </div>
             <div class="content-explore-img">
@@ -326,18 +335,18 @@
                   <span class="span-input">Basic 18+</span>
                   <div class="input-number-top">
 
-                     <button class="input-bottom" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                     <button class="input-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
                      <input type="number" min="0" max="20" value="1" readonly class="number">
-                     <button class="input-bottom" type="button"
+                     <button class="input-button" type="button"
                         onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                   <span class="span-input">Senior 65+</span>
 
 
                   <div class="input-number-bottom">
-                     <button class="input-bottom" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                     <button class="input-button" type="button" onclick="this.nextElementSibling.stepDown()">-</button>
                      <input type="number" min="0" max="20" value="1" readonly class="number">
-                     <button class="input-bottom" type="button"
+                     <button class="input-button" type="button"
                         onclick="this.previousElementSibling.stepUp()">+</button>
                   </div>
                   <span class="span-total tickets-input-title">Total €220</span>
@@ -386,7 +395,7 @@
 
                            </div>
                            <div class="entry">
-                              <div class="title-wrap">
+                              <div class="entry-title-wrap">
                                  <h4 class="entry-title">Entry Ticket</h4>
                               </div>
                               <div class="basic-tickets">
@@ -533,27 +542,27 @@
             <nav class="footer-social">
                <ul class="footer-social-list">
                   <li class="footer-social-items">
-                     <a href="" class="footer-social-link">
+                     <a href="https://www.youtube.com/user/louvre" target="_blank" class="footer-social-link">
                         <img src="assets/svg/Youtube.svg" alt="social">
                      </a>
                   </li>
                   <li class="footer-social-items">
-                     <a href="" class="footer-social-link">
+                     <a href="https://www.instagram.com/museelouvre/?hl=ru" target="_blank" class="footer-social-link">
                         <img src="assets/svg/Instagram.svg" alt="social">
                      </a>
                   </li>
                   <li class="footer-social-items">
-                     <a href="" class="footer-social-link">
+                     <a href="https://www.facebook.com/MuseeLouvreLens/" target="_blank" class="footer-social-link">
                         <img src="assets/svg/Facebook.svg" alt="social">
                      </a>
                   </li>
                   <li class="footer-social-items">
-                     <a href="" class="footer-social-link">
+                     <a href="https://twitter.com/museum_louvre" target="_blank" class="footer-social-link">
                         <img src="assets/svg/Twitter.svg" alt="social">
                      </a>
                   </li>
                   <li class="footer-social-items">
-                     <a href="" class="footer-social-link">
+                     <a href="https://www.pinterest.fr/museedulouvre/" target="_blank" class="footer-social-link">
                         <img src="assets/svg/Pinterest.svg" alt="social">
                      </a>
                   </li>
