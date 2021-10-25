@@ -1707,7 +1707,7 @@ padding: 0 0 5px 0;
     padding: 10px 0 20px 0;
   }
   .video-master{
-    max-width: 728px;
+    
     max-height: 329px;
   }
   .play{
@@ -1803,7 +1803,9 @@ padding: 0 0 5px 0;
     line-height: 21px;
   }
   .content-contacts-map iframe{
-    max-width: 728px;
+    max-width: 100%;
+    padding: 0 15px;
+    max-height: 476px;
   }
   .footer-top{
   grid-template: 1fr 1fr/1.5fr 1fr 1fr;
@@ -1813,6 +1815,37 @@ padding: 0 0 5px 0;
     grid-column: 3;
   }
 }
+@media (max-width: 895px){
+.content-tickets{
+    display: block;
+  }
+  .content-tickets-img {
+    max-width: 380px;
+    max-height: 160px;
+    margin: 0 auto;
+  }
+  .content-tickets-amount{
+    text-align: center;
+  }
+  .tickets-number-title{
+    text-align: center;
+  }
+  .input-number-top, .input-number-bottom {
+    float: inherit;
+    margin: 0 auto;
+  }
+  .content-tickets-amount{
+    
+  }
+  .tickets-input-title{
+    text-align: center;
+    padding: 40px 0 0 0;
+  }
+  .button-buy{
+    margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 420px){
   .logo-title{
@@ -1905,39 +1938,13 @@ padding: 0 0 5px 0;
     display: block;
   }
   /******************************************************/
-  .content-tickets{
-    display: block;
-  }
-  .content-tickets-img {
-    max-width: 380px;
-    max-height: 160px;
-    margin: 0 auto;
-  }
-  .content-tickets-amount{
-    text-align: center;
-  }
-  .tickets-number-title{
-    text-align: center;
-  }
-  .input-number-top, .input-number-bottom {
-    float: inherit;
-    margin: 0 auto;
-  }
-  .content-tickets-amount{
-    
-  }
-  .tickets-input-title{
-    text-align: center;
-    padding: 40px 0 0 0;
-  }
-  .button-buy{
-    margin: 0 auto;
-  }
+  
+  /******************************************************/
   .content-contacts-map iframe {
     max-width: 380px;
     max-height: 248px;
   }
-
+/******************************************************/
   .footer-nav-left-link, .footer-nav-right-link {
     font-size: 16px;
     line-height: 19px;
